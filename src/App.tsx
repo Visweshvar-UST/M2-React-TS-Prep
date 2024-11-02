@@ -29,6 +29,8 @@ return (
     <div className="App">
       <h1>total transaction</h1> {data.reduce((acc, data)=> (acc+data.amount),0)}
       <h1>total transaction in cash</h1> {data.filter((obj) => obj.cash).reduce((acc, data) => (acc + data.amount), 0)}
+      <h1>total transaction in credit</h1> {data.filter((obj) => !obj.cash).reduce((acc, data) => (acc + data.amount), 0)}
+      <h1>maximum transaction</h1> {data.reduce((max, data)=> (max<data.amount)?data.amount:max,Number.MIN_VALUE)}
     </div>
   );
 }
