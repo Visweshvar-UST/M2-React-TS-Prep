@@ -9,5 +9,4 @@
     { "name": "Mobile Bill", "amount": 60.0, "cash": false },
     { "name": "Fuel", "amount": 35.0, "cash": true },
     { "name": "Netflix Subscription", "amount": 15.99, "cash": false }
-  ]
-  
+]
