@@ -1,0 +1,13 @@
+[
+    { "name": "Groceries", "amount": 45.99, "cash": true },
+    { "name": "Electricity Bill", "amount": 89.75, "cash": false },
+    { "name": "Restaurant", "amount": 30.5, "cash": true },
+    { "name": "Internet Bill", "amount": 50.0, "cash": false },
+    { "name": "Gym Membership", "amount": 25.0, "cash": true },
+    { "name": "Car Insurance", "amount": 120.99, "cash": false },
+    { "name": "Coffee", "amount": 4.5, "cash": true },
+    { "name": "Mobile Bill", "amount": 60.0, "cash": false },
+    { "name": "Fuel", "amount": 35.0, "cash": true },
+    { "name": "Netflix Subscription", "amount": 15.99, "cash": false }
+  ]
+  
