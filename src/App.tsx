@@ -13,19 +13,35 @@ export interface Sales {
 
 function App() {
 
-  const [data , setdata] = useState<Sales[]>([]);
+  // const [data , setdata] = useState<Sales[]>([]);
   
-  useEffect(()=>{
-    (
-      async ()=>{
-        const result = await axios.get<Sales[]>('./sales.json');
-        console.log(result);
+  // // useEffect(()=>{},[]);
+  // useEffect(()=>{
+  //   (
+  //     async ()=>{
+  //       const result = await axios.get<Sales[]>('./sales.json');
+  //       // await fetch('./sales.json').then(Response=>Response.json()).then(data=>setdata(data));
+  //       console.log(result);
         
-        setdata(result.data);
-      }
-    )();
-  },[]);
+  //       setdata(result.data);
+  //      }
+  //   )();
+  // },[]);
 
+
+
+
+
+
+  const [data, setData] = useState<Sales[]>([]);
+
+  useEffect(() => {
+    (async()=>{
+      const res = await axios.get<Sales[]>('./sales.json');
+      console.log(res);
+      setData(res.data);
+    })();
+  },[]);
   
 
 return (

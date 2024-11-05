@@ -1,7 +1,7 @@
 import { Sales } from "./App";
 
 
-export const calculateTotalCash = (data: Sales[]): React.ReactNode => {
+export const calculateTotalCash = (data: Sales[]) => {
     return data.filter((obj) => obj.cash).reduce((acc, data) => (acc + data.amount), 0);
 }  
 
