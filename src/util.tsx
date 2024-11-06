@@ -24,3 +24,13 @@ export const maxBuyer = (data: Sales[]) => {
   }
   return ;
 }
+
+export const GroupBuyer = (data: Sales[]) => {
+  const res = data.reduce((acc: any,transaction)=>{
+    const key = transaction.cash ? 'cash' : 'credit';
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(transaction);
+    return acc;
+  },{});
+  return JSON.stringify(res);
+}
